@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\LeaveType\Command\" />
-    <Folder Include="Features\LeaveType\Queries\GetDetailLeaveType\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
