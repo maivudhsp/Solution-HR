@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace HR.LeaveManagement.Persistence.DatabaseContext
+namespace HR.LeaveManagement.API
 {
-    public class HrDatabaseContext : DbContext
+    public class DatabaseContext : DbContext
     {
-        public HrDatabaseContext(DbContextOptions options) : base(options)
+        public DatabaseContext(DbContextOptions options) : base(options)
         {
         }
 
@@ -16,7 +16,7 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(HrDatabaseContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DatabaseContext).Assembly);
             base.OnModelCreating(modelBuilder);
         }
     }

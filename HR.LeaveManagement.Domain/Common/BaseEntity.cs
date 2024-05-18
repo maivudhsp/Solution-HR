@@ -12,6 +12,6 @@ namespace HR.LeaveManagement.Domain.Common
         public DateTime DateCreate { get; set; }
         public string? CreateBy { get; set; }
         public DateTime DateModified { get; set; }
-        public string? ModifiedBy { get; set; }
+        public string ModifiedBy { get; set; }
     }
 }
